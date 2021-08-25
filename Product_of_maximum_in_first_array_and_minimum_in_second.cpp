@@ -66,3 +66,16 @@ int main()
     }
     return 0;
 }  // } Driver Code Ends
+
+
+/*Output -
+For Input:
+1
+6
+5 7 9 3 6 2 
+6
+1 2 6 -1 0 9
+
+Your Output is: 
+-9
+*/
