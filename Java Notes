@@ -1,7 +1,10 @@
-Type Conversion - When you assign the value of one data type to another or when you perform an operation on two operands, their data types must be compatible with each other. If the data types are not compatible, then the data type of an operand needs to be converted. 
+Type Conversion - When you assign the value of one data type to another or when you perform an operation on two operands, their data types must be compatible with each other. 
+If the data types are not compatible, then the data type of an operand needs to be converted. 
 This conversion is of two types: Implicit(Widening), Explicit(Narrowing)
 
-Implicit Type Conversion - When a value of a data type with a smaller range is assigned to a variable of a compatible data type with a larger range. When two variables of different data types are involved in an expression, the value of the smaller range data type is converted to a value of the larger range data type and then the operation is performed. 
+Implicit Type Conversion - When a value of a data type with a smaller range is assigned to a variable of a compatible data type with a larger range. When two variables of 
+different data types are involved in an expression, the value of the smaller range data type is converted to a value of the larger range data type and then the operation is 
+performed. 
 
 int discountPercentage = 10; 
 double newDiscountPercentage = discountPercentage; 
@@ -16,3 +19,11 @@ short number = 32767;
 	System.out.println(numberTwo); 
 
 Output - Since 32767+1 is out of range of short, this causes an overflow, and hence the minimum value, i.e., -32768 is considered.
+
+
+
+Break - Break statement is used to terminate a loop or the execution of a switch case.
+
+Continue - Continue statement is used to skip the current iteration of a loop and continue with the next iteration. In case of while and do-while loops, continue statement 
+skips the remaining code of the loop and passes the control to check the loop condition. Whereas in case of for loop, the control goes to the increment section and then the 
+condition is checked.
