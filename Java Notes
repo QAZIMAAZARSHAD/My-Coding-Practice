@@ -1,0 +1,18 @@
+Type Conversion - When you assign the value of one data type to another or when you perform an operation on two operands, their data types must be compatible with each other. If the data types are not compatible, then the data type of an operand needs to be converted. 
+This conversion is of two types: Implicit(Widening), Explicit(Narrowing)
+
+Implicit Type Conversion - When a value of a data type with a smaller range is assigned to a variable of a compatible data type with a larger range. When two variables of different data types are involved in an expression, the value of the smaller range data type is converted to a value of the larger range data type and then the operation is performed. 
+
+int discountPercentage = 10; 
+double newDiscountPercentage = discountPercentage; 
+
+Explicit Type Conversion - Explicit Conversion is used when you want to assign a value of a larger range data type to a smaller range data type.
+
+double totalPrice = 200;  
+int newPrice = (int)totalPrice;
+
+short number = 32767; 
+	short numberTwo = (short)(number + 1); 
+	System.out.println(numberTwo); 
+
+Output - Since 32767+1 is out of range of short, this causes an overflow, and hence the minimum value, i.e., -32768 is considered.
