@@ -42,3 +42,63 @@ entities.
 
 An object, which is an instance of a class is a real life entity which has some attributes and behaviors. The class determines the attributes and behaviors which an object 
 should possess to belong to the class.
+
+Classes in Java are created using the keyword class followed by a name.
+
+Attributes are the elements or variables which hold the values or state of a particular entity.
+
+Since each instance of a class has different values for its variables, these variables are called instance variables.
+
+Access modifiers help in limiting access to the members of a class. It can be used along with class, attribute and method.
+
+There are multiple access modifiers.
+Private - private allows members to be accessible only inside the class
+Public - public allows members to be accessible in other classes as well
+
+Methods are the set of instructions which define the behaviors of the entity.
+
+An object is an instance of a class. An object holds data for every instance variable of a class. It allows us to use the instance variables and methods specified in the class.
+Any number of objects can be created for a class.
+
+In Java, an object of a class is created using the new keyword.
+
+class Customer {
+
+	public String customerId;
+	public String customerName;
+	public long contactNumber;
+	public String address;
+
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***************************");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println("Contact Number : " + contactNumber);
+		System.out.println("Address : " + address);
+		System.out.println();
+	}
+
+}
+
+class Tester {
+
+	public static void main(String[] args) {
+
+		// Object creation
+		Customer customer = new Customer();
+
+		// Assigning values to the instance variables
+		customer.customerId = "C101";
+		customer.customerName = "Stephen Abram";
+		customer.contactNumber = 7856341287L;
+		customer.address = "D089, St. Louis Street, Springfield, 62729";
+
+		// Displaying the customer details
+		customer.displayCustomerDetails();
+		// Move the above statement immediately after the object creation
+		// statement and observe the output
+
+	}
+
+}
+
