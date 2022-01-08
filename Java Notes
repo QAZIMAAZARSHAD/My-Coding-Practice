@@ -27,3 +27,18 @@ Break - Break statement is used to terminate a loop or the execution of a sw
 Continue - Continue statement is used to skip the current iteration of a loop and continue with the next iteration. In case of while and do-while loops, continue statement 
 skips the remaining code of the loop and passes the control to check the loop condition. Whereas in case of for loop, the control goes to the increment section and then the 
 condition is checked.
+
+Object Oriented Programming(OOP) is a type of programming approach which enables the programmers to work with real life entities like Customer, Trainee, Food, Book, etc.
+OOP helps a programmer in breaking down the code into smaller modules.
+These modules can then be used for representing the individual real life entities known as objects.
+
+Advantages of OOPs -
+Modularity: OOP enables programmers to create modules that do not need to be changed when an object is added.
+Scalability: OOP makes development and maintenance easier.
+Data hiding: OOP provides hiding and securing data.
+
+Class - A representation specifying the characteristics and behaviors of an object is called a class. It is not a real life entity but a template for representing real life 
+entities.
+
+An object, which is an instance of a class is a real life entity which has some attributes and behaviors. The class determines the attributes and behaviors which an object 
+should possess to belong to the class.
