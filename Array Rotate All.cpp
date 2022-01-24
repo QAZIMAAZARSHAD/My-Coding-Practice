@@ -1,4 +1,4 @@
-// Cyclically rotate an array by one anticlock-wise
+// Cyclically rotate an array by one (right)anticlock-wise
 void rotate(int a[], int n){
     int i, temp;
     temp = a[0];
@@ -18,10 +18,10 @@ void rotate(int a[], int n){
     a[0] = temp;
 }
 
-// Rotate the array to the left (counter-clockwise direction) by d steps
-void rotateArr(int a[], int d, int n){
-        reverse(a, a + d);
-        reverse(a + d, a + n);
+// Rotate the array to the left (counter-clockwise direction) by k steps
+void rotateArr(int a[], int k, int n){
+        reverse(a, a + k);
+        reverse(a + k, a + n);
         reverse(a, a + n);
 }
 
