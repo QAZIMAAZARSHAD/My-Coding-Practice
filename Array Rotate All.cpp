@@ -27,8 +27,8 @@ void rotateArr(int a[], int k, int n){
 
 // Rotate the vector to the left (counter-clockwise direction) by k steps
 void rotate(vector<int>& a, int k) {
-        reverse(a.begin(), a.begin()+k);
-        reverse(a.begin()+k, a.end());
+        reverse(a.begin(), a.begin() + k);
+        reverse(a.begin() + k, a.end());
         reverse(a.begin(), a.end());
 }
 
