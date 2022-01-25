@@ -102,3 +102,58 @@ class Tester {
 
 }
 
+
+
+The arguments passed while making the method call are known as actual parameters and the arguments present in the method header are known as formal parameters.
+ 
+The variables declared inside a method are known as local variables and the scope of these variables is only within the method, i.e., they cannot be accessed outside the method.
+Formal parameters are also local variables. 
+
+Instance variable can be accessed from outside the class with the help of object.
+
+When an object is passed as a parameter, the formal and the actual parameters both refer to the same object and hence the same memory location. Therefore, the changes made 
+inside the method to the formal parameters are reflected in the actual parameters also. This kind of parameter passing is known as pass by reference. 
+
+A constructor in Java is a special method that is used to initialize class variables at the time of object creation. 
+Each time an object is created using the new() keyword, a constructor is called. A constructor can be created by the programmer. 
+If the developer does not create any constructor, then, Java provides a default constructor. 
+Constructors have the same name as that of the class and does not have a return type.
+A class can have multiple constructors.
+A constructor can have an access modifier.
+A constructor with no arguments is known as a parameterless constructor.
+<access modifier> <name> (<parameters>){
+     //body
+} 
+
+This Keyword -  When the name of the instance variables of the class and the parameters passed in the constructor are the same, "This" keyword is used to enable the compiler 
+to differentiate between the instance variables and the local variables.
+this() is used to invoke the constructor of the current class
+public class Customer {
+	public String customerId;
+	public String customerName;
+	public long contactNumber;
+	public String address;
+	public Customer(String customerId, String customerName, long contactNumber, String address){
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.contactNumber = contactNumber;
+		this.address = address;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
