@@ -1,8 +1,7 @@
 //A string which is a mixture of letters, numbers, and special characters from which produce the largest
 //
-//even number from the available digit after removing the duplicates digits.
+//number from the available digit after removing the duplicates digits.
 //
-//If an even number did not produce then return -1.
 //
 //Ex: infosys@337
 //
