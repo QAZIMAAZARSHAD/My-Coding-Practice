@@ -2,8 +2,11 @@
 using namespace std;
 
 static bool cmp(string a, string b){
-         return (a.length() < b.length() || (a.length() == b.length() && a < b));
+    if(a.size() == b.size()){
+        return a<b;
     }
+    return a.size()<b.size();
+}
 
 int main(){
         vector<string> a = {"2","21","12","1"};
